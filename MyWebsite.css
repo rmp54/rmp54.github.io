@@ -1,0 +1,148 @@
+ html,
+ body {
+     width: 100%;
+     height: 100%;
+     margin: 0px;
+     padding: 0px;
+ }
+ 
+ body {
+     position: relative;
+     background-image: url(地毯草.jpg)
+ }
+ 
+ .namecard {
+     width: 900px;
+     height: 350px;
+     border-radius: 30px;
+     margin-top: 150px;
+     margin-left: auto;
+     margin-right: auto;
+     background-color: azure;
+     letter-spacing: 1px;
+     color: slategray;
+     box-shadow: 10px 10px 30px #EFEFEF;
+     position: relative;
+ }
+ 
+ img {
+     float: left;
+     position: relative;
+     border-radius: 8px;
+     box-shadow: 0px 0px 15px black;
+     margin: 30px;
+ }
+ 
+ .right {
+     padding: 30px;
+     padding-left: 200px
+ }
+ 
+ span {
+     color: #22d1d1;
+ }
+ 
+ h3 {
+     font-size: 28px;
+ }
+ 
+ .right p {
+     font-family: inherit
+ }
+ 
+ table,
+ td,
+ th {
+     border-style: solid;
+     border-width: 1px;
+     border-collapse: collapse;
+     padding: 5px;
+ }
+ 
+ tr:nth-child(2n+3) {
+     background-color: #EFEFEF
+ }
+ 
+ tr:nth-child(2n) {
+     background-color: white
+ }
+ 
+ th {
+     background-color: #3895B8;
+     color: white;
+     font-size: 15px
+ }
+ 
+ caption {
+     font-size: 25px;
+     color: white
+ }
+ 
+ table {
+     width: 70%;
+     margin-left: auto;
+     margin-right: auto
+ }
+ 
+ h2,
+ h3 {
+     font-weight: 900;
+ }
+ 
+ .circle1,
+ .circle2 {
+     width: 100px;
+     height: 100px;
+     border-radius: 100%;
+     position: absolute;
+ }
+ 
+ .circle1 {
+     border: orange;
+     border-style: solid;
+     border-width: 6px;
+     top: 5px;
+     right: 100px;
+     width: 80px;
+     height: 80px;
+ }
+ 
+ .circle2 {
+     background-color: orange;
+     width: 20px;
+     height: 20px;
+     top: 50px;
+     right: 300px;
+ }
+ 
+ .namecard:hover {
+     transform: translateX(30px) translateY(0px);
+     background-color: rgb(253, 253, 253)
+ }
+ 
+ .namecard:hover .circle1 {
+     transform-origin: center;
+     transform: scale(1.5);
+     transition-duration: 5s;
+     overflow: hidden;
+     border-width: 5px
+ }
+ 
+ .namecard:hover .circle2 {
+     transform-origin: center;
+     transform: scale(0.0);
+     right: 5px;
+     top: 5px;
+     transition-duration: 3s;
+ }
+ 
+ th:hover,
+ td:hover {
+     background-color: bisque
+ }
+ 
+ caption:hover {
+     transform-origin: center;
+     transform: scale(30);
+     transition-duration: 0.5s
+ }
